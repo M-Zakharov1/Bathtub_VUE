@@ -8,7 +8,6 @@
       <span class='bathtub-description'>{{isUp}}</span>
       <div class='bathtub'>
         <div class='bathtub__body'>
-          <!-- <div class='bathtub__111' ></div>  -->
         <div :style="{background: 'aqua', height: waterLevel, width: '100%'}"></div>
         </div>
       </div>
