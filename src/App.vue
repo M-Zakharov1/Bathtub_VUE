@@ -106,8 +106,4 @@ button {
   display: flex; 
   align-items: end;
 }
-
-.bathtub__111 {
-
-}
 </style>
