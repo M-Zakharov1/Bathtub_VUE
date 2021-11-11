@@ -8,7 +8,6 @@
       <span class='bathtub-description'>{{isUp}}</span>
       <div class='bathtub'>
         <div class='bathtub__body'>
-          <!-- <div class='bathtub__111' ></div>  -->
         <div :style="{background: 'aqua', height: waterLevel, width: '100%'}"></div>
         </div>
       </div>
@@ -16,7 +15,6 @@
 </template>
 
 <script>
-
 
 export default {
   name: 'App',
@@ -38,11 +36,9 @@ export default {
     change() {
       this.interval = setTimeout(() => {
         if (this.isUp === 'increase' && this.water < 100) {
-          console.log('>>>');
           this.water += 20;
         }
         if (this.isUp === 'decrease' && this.water > 0) {
-          console.log('<<<');
           this.water -= 20;
         }}, 2000)   
     },
@@ -57,8 +53,6 @@ export default {
       this.change()
     },
   },
-
-
 
   beforeDestroy() {
    clearTimeout(this.interval);
@@ -79,7 +73,6 @@ export default {
   height: 400px;
   margin: 10px auto;
   border: 5px solid black;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -107,10 +100,6 @@ button {
   border: 5px solid cadetblue;
   border-radius: 10px;
   display: flex; 
-  align-items: end;
-}
-
-.bathtub__111 {
-
+  align-items: flex-end;
 }
 </style>
