@@ -16,7 +16,6 @@
 
 <script>
 
-
 export default {
   name: 'App',
  data() {
@@ -55,8 +54,6 @@ export default {
     },
   },
 
-
-
   beforeDestroy() {
    clearTimeout(this.interval);
   }
@@ -76,7 +73,6 @@ export default {
   height: 400px;
   margin: 10px auto;
   border: 5px solid black;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -104,6 +100,6 @@ button {
   border: 5px solid cadetblue;
   border-radius: 10px;
   display: flex; 
-  align-items: end;
+  align-items: flex-end;
 }
 </style>
