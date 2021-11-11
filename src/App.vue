@@ -38,11 +38,9 @@ export default {
     change() {
       this.interval = setTimeout(() => {
         if (this.isUp === 'increase' && this.water < 100) {
-          console.log('>>>');
           this.water += 20;
         }
         if (this.isUp === 'decrease' && this.water > 0) {
-          console.log('<<<');
           this.water -= 20;
         }}, 2000)   
     },
